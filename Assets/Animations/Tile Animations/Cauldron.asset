@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1372e1b51af444c388159d0dc90ee869, type: 3}
+  m_Name: Cauldron
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 6442766602633252349, guid: ccffdbaf0879f42ceb30d561c2fcb6ec, type: 3}
+  - {fileID: -2784584931357986525, guid: ccffdbaf0879f42ceb30d561c2fcb6ec, type: 3}
+  - {fileID: -5351388812499060159, guid: ccffdbaf0879f42ceb30d561c2fcb6ec, type: 3}
+  - {fileID: -3695373339189723223, guid: ccffdbaf0879f42ceb30d561c2fcb6ec, type: 3}
+  - {fileID: -5987745765744258254, guid: ccffdbaf0879f42ceb30d561c2fcb6ec, type: 3}
+  - {fileID: -2022902607151454952, guid: ccffdbaf0879f42ceb30d561c2fcb6ec, type: 3}
+  - {fileID: -8634948343057884107, guid: ccffdbaf0879f42ceb30d561c2fcb6ec, type: 3}
+  - {fileID: 6125975195567187751, guid: ccffdbaf0879f42ceb30d561c2fcb6ec, type: 3}
+  - {fileID: -2229930762293018196, guid: ccffdbaf0879f42ceb30d561c2fcb6ec, type: 3}
+  - {fileID: 5707344351206108889, guid: ccffdbaf0879f42ceb30d561c2fcb6ec, type: 3}
+  - {fileID: -6741533239311914641, guid: ccffdbaf0879f42ceb30d561c2fcb6ec, type: 3}
+  - {fileID: -8531901801796062230, guid: ccffdbaf0879f42ceb30d561c2fcb6ec, type: 3}
+  m_MinSpeed: 5
+  m_MaxSpeed: 5
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
