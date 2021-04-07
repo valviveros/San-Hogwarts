@@ -23,9 +23,9 @@ public class WhereAmI : MonoBehaviour
     {
         if (col.CompareTag("Player") && room.name == "WhereAmI")
         {
-            maxPosition.x = 80.01f;
-            maxPosition.y = 131.7f;
-            minPosition.x = -41f;
+            maxPosition.x = 70.1f;
+            maxPosition.y = 167.9f;
+            minPosition.x = -91f;
             minPosition.y = 0f;
         } 
     }

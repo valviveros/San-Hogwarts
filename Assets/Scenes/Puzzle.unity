@@ -233,7 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79fc8f8712ce2484d825ffa68402f68f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Level1
+  sceneToLoad: Campus
   playerPosition: {x: 0, y: 0}
   playerStorage: {fileID: 11400000, guid: 9b19024fb244341ee862bff0eff1cab0, type: 2}
   fadeInpanel: {fileID: 242298236390755629, guid: 42e029a94b2f440dbb88ee6a60dc2cf6,
