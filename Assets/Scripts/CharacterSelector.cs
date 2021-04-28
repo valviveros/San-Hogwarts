@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +11,7 @@ public class CharacterSelector : MonoBehaviour
     bool pressedWitch = false;
     bool pressedWizard = false;
     static public int index;
+    public Button selectedButton;
     public GameObject canvas;
     public GameObject fadeInpanel;
     public GameObject fadeOutPanel;
@@ -21,6 +23,7 @@ public class CharacterSelector : MonoBehaviour
         characterList[0].gameObject.SetActive(true);
         characterList[1].gameObject.SetActive(false);
         pressedWitch = true;
+        selectedButton.Select();
     }
 
     public void onClick()
