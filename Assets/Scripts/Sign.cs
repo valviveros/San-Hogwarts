@@ -97,10 +97,4 @@ public class Sign : MonoBehaviour
             StopAllCoroutines();
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

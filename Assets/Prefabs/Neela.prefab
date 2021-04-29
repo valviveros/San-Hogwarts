@@ -209,3 +209,11 @@ MonoBehaviour:
   characterList:
   - {fileID: 6413889417918559728}
   - {fileID: 0}
+  numOfHearts: 4
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  fullHeart: {fileID: 21300000, guid: c45da550dd2804a1ab52cfbd9b4a551c, type: 3}
+  emptyHeart: {fileID: 21300000, guid: edc5bd546b8244bf5b17355cd07cb2cb, type: 3}
