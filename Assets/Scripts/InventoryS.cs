@@ -20,17 +20,14 @@ public class InventoryS : MonoBehaviour
     void Update(){
         
     }
-    void OnTriggerEnter2D(Collider2D coll){ //detectar contacto con un objeto
-        if (coll.CompareTag("Item"))
-        {  
-            for (int i = 0; i < Bag.Count; i++) //tamaño de la lista
+    public void updateInventory(Sprite sprite) {
+        for (int i = 0; i < Bag.Count; i++) //tamaño de la lista
+        {
+            if (Bag[i].GetComponent<Image>().enabled == false) //componente imagen desactivado
             {
-                if (Bag[i].GetComponent<Image>().enabled == false) //componente imagen desactivado
-                {
-                    Bag[i].GetComponent<Image>().enabled = true; //si está desactivado entonces se activa
-                    Bag[i].GetComponent<Image>().sprite = coll.GetComponent<SpriteRenderer>().sprite; //la imagen es igual al obj colisionado
-                    break;
-                }
+                Bag[i].GetComponent<Image>().enabled = true; //si está desactivado entonces se activa
+                Bag[i].GetComponent<Image>().sprite = sprite; //la imagen es igual al obj colisionado
+                break;
             }
         }
     }
