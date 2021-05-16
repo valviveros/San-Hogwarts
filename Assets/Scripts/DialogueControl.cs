@@ -6,12 +6,18 @@ using TMPro;
 
 public class DialogueControl : MonoBehaviour
 {
-    private Animator anim;
+    private Animation anim;
     public GameObject Object;
+    public GameObject animate;
+   
     private Queue <string> colaDialogos = new Queue<string>(); // importante poner siempre new ya que así se inicializa 
     Textos texto;
     [SerializeField] TextMeshProUGUI textoPantalla;
 
+    void Start(){
+      
+        // Debug.Log(animate);
+    }
     public void ActivateBuble(Textos textoObjeto){
         // anim.SetBool("BubbleD",false);
         texto = textoObjeto;
@@ -46,4 +52,14 @@ public class DialogueControl : MonoBehaviour
        
 
     }
+
+    void AnimateDialogue(){
+        // anim.enabled=true;
+        animate.GetComponent<Animator>().enabled = true;//activa animación
+        // anim.Play("TransitionImg");
+    }
+
+   
+
+   
 }

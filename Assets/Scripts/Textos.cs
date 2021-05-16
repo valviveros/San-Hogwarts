@@ -4,7 +4,7 @@ using UnityEngine;
 [System.Serializable]
 public class Textos
 {
-   [TextArea (2,6)]
+   [TextArea (2,7)]
    public string[] arrayTextos;
 
 }
