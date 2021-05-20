@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Item
   - Profe
+  - collitions
+  - ObjOne
+  - calabaza
+  - Venus
+  - Potion
   layers:
   - Default
   - TransparentFX
