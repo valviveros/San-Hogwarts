@@ -3,25 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-
-public class DialogueControl : MonoBehaviour
+public class DialogueControl2 : MonoBehaviour
 {
     private Animation anim;
     public GameObject Object;
     public GameObject animate;
    
     private Queue <string> colaDialogos = new Queue<string>(); // importante poner siempre new ya que así se inicializa 
-    Textos texto;
+    TextoMission texto;
     [SerializeField] TextMeshProUGUI textoPantalla;
 
     void Start(){
       
         // Debug.Log(animate);
     }
-    public void ActivateBuble(Textos textoObjeto){
-        // anim.SetBool("BubbleD",false);
+    public void ActivateBuble(TextoMission textoObjeto){
         texto = textoObjeto;
-        // Debug.Log("ActivateBuble: "+ texto.arrayTextos[1]);//hasta aquí llega el array
+        
     }
 
     public void ActivateTexto(){
@@ -44,6 +42,7 @@ public class DialogueControl : MonoBehaviour
         }
         string fraseActual = colaDialogos.Dequeue();
         textoPantalla.text = fraseActual;
+        
     }
 
     void CierraCartel(){

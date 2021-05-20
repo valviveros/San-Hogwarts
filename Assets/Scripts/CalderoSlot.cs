@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 
 public class CalderoSlot : MonoBehaviour, IDropHandler 
 {
+    public GameObject pointer;
     public GameObject CloseMission;
     public GameObject[] arrayIngredients;
     private Queue <GameObject> colaIngredients2 = new Queue<GameObject>();
@@ -25,6 +26,7 @@ public class CalderoSlot : MonoBehaviour, IDropHandler
                     {
                         Debug.Log("ganaste");
                         CloseMission.SetActive(false);
+                        pointer.SetActive(true);
                         Destroy(CloseMission);
                     }
                     else{
