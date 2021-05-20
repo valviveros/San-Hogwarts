@@ -11,6 +11,7 @@ TagManager:
   - calabaza
   - Venus
   - Potion
+  - NPC
   layers:
   - Default
   - TransparentFX
