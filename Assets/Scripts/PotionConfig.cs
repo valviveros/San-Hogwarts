@@ -14,6 +14,8 @@ public class PotionConfig : MonoBehaviour
 
     public Sprite sprite;
 
+    public GameObject pointer;
+
     void Start()
     {
         inventoryS = GameObject.FindObjectOfType<InventoryS>();
@@ -27,6 +29,11 @@ public class PotionConfig : MonoBehaviour
             // audioData2.Play();
             potion.SetActive(false);
             inventoryS.updateInventory(sprite);
+
+            pointer.SetActive(true);
         }
+    }
+    public void closePointer(){
+        pointer.SetActive(false);
     }
 }

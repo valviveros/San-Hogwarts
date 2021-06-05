@@ -14,6 +14,8 @@ public class ConfigScreen_lose : MonoBehaviour
         ButtonStart.SetActive(true);
         ButtonMenu.SetActive(true);
         TitleLose.SetActive(true);
+      
+
     }
 
     public void Menu(){
@@ -21,6 +23,7 @@ public class ConfigScreen_lose : MonoBehaviour
     }
 
     public void Restart(){
+       
         SceneManager.LoadScene("Potions");
     }
 }
