@@ -10,6 +10,9 @@ public class CalderoSlot : MonoBehaviour, IDropHandler
     public GameObject[] arrayIngredients;
     private Queue <GameObject> colaIngredients2 = new Queue<GameObject>();
     private GameObject[] arrayIngredients2;
+    public GameObject Cortina;
+    public GameObject Ganaste_item;
+    public GameObject PotionBlue;
     public void OnDrop(PointerEventData eventData){
         
        if (eventData.pointerDrag != null)
@@ -21,22 +24,26 @@ public class CalderoSlot : MonoBehaviour, IDropHandler
             {
                 if (arrayIngredients2[i] == arrayIngredients[i])
                 {
+                    eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
                     Debug.Log("igual");
                    if (arrayIngredients2[0] == arrayIngredients[0] && arrayIngredients2[1] == arrayIngredients[1] && arrayIngredients2[2] == arrayIngredients[2])
-                    {
-                        Debug.Log("ganaste");
+                    {   
+                        PotionBlue.SetActive(true);
+                        Ganaste_item.SetActive(true);
                         CloseMission.SetActive(false);
                         pointer.SetActive(true);
                         Destroy(CloseMission);
                     }
                     else{
                         Debug.Log("paila");
+                        Cortina.SetActive(true);
                     }
                 }else{
                     Debug.Log("paila");
-                }   
+                    Cortina.SetActive(true);
+                }  
+                 
             }
-            eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
         }
     }
    
