@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class ConfigIntroAni : MonoBehaviour
 {
     public GameObject image;
+    
+    public GameObject video;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +20,14 @@ public class ConfigIntroAni : MonoBehaviour
         
     }
 
+    public void activeVideo(){
+        video.SetActive(true);
+        image.SetActive(false);
+    }
+
     public void zonas(){
         
-        image.SetActive(false);
+       
         SceneManager.LoadScene("Menu");
     }
 }
