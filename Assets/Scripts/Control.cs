@@ -20,6 +20,5 @@ public class Control : MonoBehaviour
     void Update()
     {
         agente.destination = objetivo.position;
-        
     }
 }
