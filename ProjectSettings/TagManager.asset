@@ -12,6 +12,8 @@ TagManager:
   - Venus
   - Potion
   - NPC
+  - enemy
+  - breakable
   layers:
   - Default
   - TransparentFX

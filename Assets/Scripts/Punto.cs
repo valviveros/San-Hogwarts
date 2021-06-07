@@ -14,10 +14,8 @@ public class Punto : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("0");
         if (other.gameObject.tag == "NPC")
         {
-            Debug.Log("1");
             other.gameObject.GetComponent<Control>().objetivo = siguientenNodo;
         }
     }
