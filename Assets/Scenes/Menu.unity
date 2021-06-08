@@ -175,7 +175,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -217,9 +217,9 @@ RectTransform:
   - {fileID: 1821169697}
   - {fileID: 313748658}
   - {fileID: 1983008163}
+  - {fileID: 317842555}
   - {fileID: 360359632}
   - {fileID: 1747583785}
-  - {fileID: 317842555}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -416,8 +416,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 313748657}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -403.3001, y: -186, z: 0}
-  m_LocalScale: {x: 0.44642857, y: 0.44642857, z: 0.44642857}
+  m_LocalPosition: {x: -968.4, y: -446.16, z: 0}
+  m_LocalScale: {x: 1.0874078, y: 1.0874078, z: 1.0874078}
   m_Children: []
   m_Father: {fileID: 207003862}
   m_RootOrder: 1
@@ -518,11 +518,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 317842554}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -400.0001, y: -184.8, z: 0}
-  m_LocalScale: {x: 0.74, y: 0.75, z: 0}
+  m_LocalPosition: {x: -959.99, y: -443.51, z: 0}
+  m_LocalScale: {x: 1.7641102, y: 1.5805644, z: 0}
   m_Children: []
   m_Father: {fileID: 207003862}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &317842556
 Animator:
@@ -851,12 +851,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 207003862}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 800, y: 370}
+  m_AnchoredPosition: {x: 5, y: 31}
+  m_SizeDelta: {x: 975.9009, y: 370}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &360359633
 MonoBehaviour:
@@ -879,11 +879,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 91a66200dc2a2450c9261ced6ea913d4, type: 3}
-    m_FontSize: 40
+    m_FontSize: 110
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 4
-    m_MaxSize: 86
+    m_MinSize: 0
+    m_MaxSize: 120
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1664,12 +1664,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 207003862}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -85}
-  m_SizeDelta: {x: 400, y: 40}
+  m_AnchoredPosition: {x: 16, y: -160.7}
+  m_SizeDelta: {x: 1284.6781, y: 104.669495}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1747583786
 Animator:
@@ -1711,11 +1711,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 455602fec22e74bd8a22191521e9acec, type: 3}
-    m_FontSize: 35
+    m_FontSize: 90
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1757,8 +1757,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1821169696}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -397.0001, y: -186.1, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.4464286}
+  m_LocalPosition: {x: -952.05, y: -446.21, z: 0}
+  m_LocalScale: {x: 1.4614762, y: 1.4614762, z: 1.087408}
   m_Children: []
   m_Father: {fileID: 207003862}
   m_RootOrder: 0
@@ -1859,8 +1859,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983008162}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -400.00006, y: -183.6, z: 0}
-  m_LocalScale: {x: 0.44642866, y: 0.44642866, z: 0.44642866}
+  m_LocalPosition: {x: -959.99, y: -441.25, z: 0}
+  m_LocalScale: {x: 1.0874081, y: 1.0874081, z: 1.0874081}
   m_Children: []
   m_Father: {fileID: 207003862}
   m_RootOrder: 2
