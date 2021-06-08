@@ -14,7 +14,7 @@ public class PotionConfig : MonoBehaviour
 
     public Sprite sprite;
 
-    public GameObject pointer;
+    
 
     void Start()
     {
@@ -30,10 +30,8 @@ public class PotionConfig : MonoBehaviour
             potion.SetActive(false);
             inventoryS.updateInventory(sprite);
 
-            pointer.SetActive(true);
+            
         }
     }
-    public void closePointer(){
-        pointer.SetActive(false);
-    }
+   
 }
