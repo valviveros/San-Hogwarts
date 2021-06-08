@@ -8,7 +8,6 @@ public class Enemito : MonoBehaviour {
     public float visionRadius;
     public float attackRadius;
     public float speed;
-    RaycastHit2D hit;
 
 
     ///----- Variables relacionadas con el ataque
@@ -48,7 +47,7 @@ public class Enemito : MonoBehaviour {
         target = initialPosition;
 
         // Comprobamos un Raycast del enemigo hasta el jugador
-        hit = Physics2D.Raycast(
+        RaycastHit2D hit = Physics2D.Raycast(
             transform.position, 
             player.transform.position - transform.position, 
             visionRadius, 
@@ -63,7 +62,11 @@ public class Enemito : MonoBehaviour {
         Debug.DrawRay(transform.position, forward, Color.red);
 
         // Si el Raycast encuentra al jugador lo ponemos de target
-
+        if (hit.collider != null) {
+            if (hit.collider.tag == "Player"){
+                target = player.transform.position;
+            }
+        }
 
         // Calculamos la distancia y dirección actual hasta el target
         float distance = Vector3.Distance(target, transform.position);
@@ -100,19 +103,9 @@ public class Enemito : MonoBehaviour {
         // Y un debug optativo con una línea hasta el target
         Debug.DrawLine(transform.position, target, Color.green);
     }
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (hit.collider != null)
-        {
-            if (hit.collider.tag == "Player")
-            {
 
-                target = player.transform.position;
-            }
-        }
-    }
-        // Podemos dibujar el radio de visión y ataque sobre la escena dibujando una esfera
-        void OnDrawGizmosSelected() {
+    // Podemos dibujar el radio de visión y ataque sobre la escena dibujando una esfera
+    void OnDrawGizmosSelected() {
 
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, visionRadius);
