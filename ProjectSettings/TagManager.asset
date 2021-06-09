@@ -12,6 +12,7 @@ TagManager:
   - Venus
   - Potion
   - NPC
+  - prueba
   - enemy
   - breakable
   layers:
@@ -23,8 +24,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Enemy
+  - Attack
   - 
   - 
   - 
@@ -56,4 +57,7 @@ TagManager:
     locked: 0
   - name: Signs
     uniqueID: 2177979301
+    locked: 0
+  - name: Enemy
+    uniqueID: 994931399
     locked: 0

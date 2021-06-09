@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -20,6 +20,7 @@ public class Timer : MonoBehaviour
     private float tiempoAMostrarEnSegundos = 0f;
     private float escalaDeTiempoAlPausar, escalaDeTiempoInicial;
     private bool estaPausado = false;
+    public GameObject LosePanel;
 
     void Start(){
         escalaDeTiempoInicial = escalaDeTiempo;
@@ -49,8 +50,23 @@ public class Timer : MonoBehaviour
        segundos = (int)tiempoEnSegundos % 60;
 
        textoDelReloj = minutos.ToString("00") + ":" + segundos.ToString("00");
+       
+       if (textoDelReloj == "13:00")
+       {
+           LosePanel.SetActive(true);
+       }
 
         myText.text = textoDelReloj;
    }
+
+   public void botonRestart(){
+       SceneManager.LoadScene("Campus");
+   }
+
+    public void botonMenu(){
+       SceneManager.LoadScene("Menu");
+
+   }
    
 }
+
