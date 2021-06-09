@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     private CharacterSelector characterSelector;
     public GameObject[] characterList;
+    public GameObject[] buttonsList;
     static public int lives = 4;
     public int numOfHearts;
     public Image[] hearts;
@@ -26,10 +27,14 @@ public class PlayerController : MonoBehaviour
         {
             characterList[0].SetActive(true);
             characterList[1].SetActive(false);
+            buttonsList[0].SetActive(true);
+            buttonsList[1].SetActive(false);
         }
         else if (CharacterSelector.index == 1) {
             characterList[0].SetActive(false);
             characterList[1].SetActive(true);
+            buttonsList[0].SetActive(false);
+            buttonsList[1].SetActive(true);
         }
     }
 
