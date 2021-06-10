@@ -1490,7 +1490,8 @@ MonoBehaviour:
   textos2:
     arrayTextos2:
     - "Dir\xEDgete a tu mesa de trabajo, para empezar con la clase."
-    - 'LLega a tiempo para la siguiente clase a las 13:00 horas.
+    - 'Recoge todos los diamantes y pociones antes de que inicie la clase de las
+      13:00.
 
 '
 --- !u!1 &455581597 stripped
@@ -8734,7 +8735,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1293506520
 MonoBehaviour:
   m_ObjectHideFlags: 0
