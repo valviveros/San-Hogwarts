@@ -3148,6 +3148,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1367147478545933353, guid: 35a83794e586e49098500bf16394860a,
         type: 3}
+      propertyPath: startingPosition
+      value: 
+      objectReference: {fileID: 11400000, guid: 9b19024fb244341ee862bff0eff1cab0,
+        type: 2}
+    - target: {fileID: 1367147478545933353, guid: 35a83794e586e49098500bf16394860a,
+        type: 3}
       propertyPath: hearts.Array.data[0]
       value: 
       objectReference: {fileID: 1594415871}
@@ -11780,6 +11786,12 @@ PrefabInstance:
       propertyPath: Bag.Array.data[23]
       value: 
       objectReference: {fileID: 111998492}
+    - target: {fileID: 6660854354085902200, guid: f46f55b81fd4a4de9b5fe0433a464cae,
+        type: 3}
+      propertyPath: startingPosition
+      value: 
+      objectReference: {fileID: 11400000, guid: 9b19024fb244341ee862bff0eff1cab0,
+        type: 2}
     - target: {fileID: 6660854354085902200, guid: f46f55b81fd4a4de9b5fe0433a464cae,
         type: 3}
       propertyPath: hearts.Array.data[0]

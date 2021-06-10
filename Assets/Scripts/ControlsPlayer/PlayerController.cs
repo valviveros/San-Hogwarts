@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
+    public VectorValue startingPosition;
+
 
     // Start is called before the first frame update
     void Start()
@@ -73,6 +75,7 @@ public class PlayerController : MonoBehaviour
         } else
         {
             lives = 4;
+            startingPosition.initialValue=new Vector2(0,0);
             SceneManager.LoadScene("Potions");
         }
     }
