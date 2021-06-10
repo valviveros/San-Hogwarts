@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 114860246231357180}
   - component: {fileID: 61654904761794212}
   - component: {fileID: 95978110417515160}
-  - component: {fileID: 114419153531601642}
   - component: {fileID: 50573978581630612}
+  - component: {fileID: 6559847745882241353}
   m_Layer: 8
   m_Name: Enemy
   m_TagString: Untagged
@@ -144,23 +144,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114419153531601642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1165992998545724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6221113e8aeb6ab4b89c68ff1cb5e298, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  visionRadius: 4
-  attackRadius: 2.5
-  speed: 1.5
-  rockPrefab: {fileID: 1603110710105814, guid: 31622109f9160fd45a4d5507bddc31e3, type: 3}
-  attackSpeed: 2
 --- !u!50 &50573978581630612
 Rigidbody2D:
   serializedVersion: 4
@@ -182,3 +165,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &6559847745882241353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165992998545724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c7411b4075f0324d9b5decb17c91be7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visionRadius: 4.06
+  attackRadius: 2.1
+  speed: 1.06
+  rockPrefab: {fileID: 1603110710105814, guid: 31622109f9160fd45a4d5507bddc31e3, type: 3}
+  attackSpeed: 2
