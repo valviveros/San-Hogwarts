@@ -27,7 +27,7 @@ public class EnterHouse : MonoBehaviour
         {
 
 
-            if (inv.zonas == 2)
+            if (inv.zonas == 12)
             {
                 Debug.Log("completo");
                 Panelfin.SetActive(true);

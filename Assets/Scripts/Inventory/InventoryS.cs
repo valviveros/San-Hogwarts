@@ -29,7 +29,7 @@ public class InventoryS : MonoBehaviour
             {
                 Bag[i].GetComponent<Image>().enabled = true; //si está desactivado entonces se activa
                 Bag[i].GetComponent<Image>().sprite = sprite; //la imagen es igual al obj colisionado
-                if (Bag[i]==Bag[2])
+                if (Bag[i]==Bag[12])
                 {   
                     zonas = i;
                     Debug.Log(zonas);
