@@ -6,9 +6,10 @@ Dentro de los collectibles se encuentra una serie de gemas distribuidas por el m
 
 El juego concluye una vez se haya resuelto todos los misterios y todas los cursos se hayan completado de manera satisfactoria. 
 
-![vid2](https://user-images.githubusercontent.com/49179416/121541858-43542a00-c9cd-11eb-8e40-f5f086077d13.gif)
 
-#Archivo del juego
+![video_2021-06-07_21-21-56](https://user-images.githubusercontent.com/49179416/121542219-94fcb480-c9cd-11eb-9041-c355683b4cb0.gif)
+
+
 
 
 
