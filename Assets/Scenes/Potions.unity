@@ -8741,7 +8741,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1293506520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11307,6 +11307,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 142
       objectReference: {fileID: 0}
+    - target: {fileID: 2055485369412904661, guid: 3aafaec9227844e71a0200fda72bd595,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 523233479}
+    - target: {fileID: 2055485369412904661, guid: 3aafaec9227844e71a0200fda72bd595,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 523233479}
     - target: {fileID: 2880887453020497873, guid: 3aafaec9227844e71a0200fda72bd595,
         type: 3}
       propertyPath: pointer
@@ -11457,6 +11467,16 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 523233479}
+    - target: {fileID: 4895831997221246212, guid: 3aafaec9227844e71a0200fda72bd595,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 230412144}
+    - target: {fileID: 4895831997221246212, guid: 3aafaec9227844e71a0200fda72bd595,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 230412144}
     - target: {fileID: 4986319825826215875, guid: 3aafaec9227844e71a0200fda72bd595,
         type: 3}
       propertyPath: m_RenderMode
@@ -11496,6 +11516,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123983221870253279, guid: 3aafaec9227844e71a0200fda72bd595,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 7863228235336540614, guid: 3aafaec9227844e71a0200fda72bd595,
         type: 3}
