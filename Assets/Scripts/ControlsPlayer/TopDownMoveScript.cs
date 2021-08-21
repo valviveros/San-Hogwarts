@@ -20,9 +20,11 @@ public class TopDownMoveScript : MonoBehaviour {
     private Vector3 change;
     private Animator animator;
     public float speed;
+    private float auxSpeed;
 	private float dirX, dirY;
     public VectorValue startingPosition;
     private bool aButtonPressed;
+    private bool bButtonPressed;
 
     // Start is called before the first frame update
     void Start() {
@@ -31,6 +33,7 @@ public class TopDownMoveScript : MonoBehaviour {
         myRigidbody = GetComponent<Rigidbody2D>();
         transform.position = startingPosition.initialValue;
         aButtonPressed = false;
+        bButtonPressed = false;
 	}
 
 	// Update is called once per frame
@@ -88,6 +91,18 @@ public class TopDownMoveScript : MonoBehaviour {
     public void OnPointerUp()
     {
         aButtonPressed = false;
+    }
+
+    public void OnPointerBDown() {
+        bButtonPressed = true;
+        auxSpeed = speed;
+        speed = 7;
+    }
+
+    public void OnPointerBUp()
+    {
+        bButtonPressed = false;
+        speed = auxSpeed;
     }
 
     public void Knock(float knockTime)
