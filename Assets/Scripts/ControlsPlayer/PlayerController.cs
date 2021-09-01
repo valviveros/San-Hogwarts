@@ -31,12 +31,16 @@ public class PlayerController : MonoBehaviour
             characterList[1].SetActive(false);
             buttonsList[0].SetActive(true);
             buttonsList[1].SetActive(false);
+            buttonsList[2].SetActive(true);
+            buttonsList[3].SetActive(false);
         }
         else if (CharacterSelector.index == 1) {
             characterList[0].SetActive(false);
             characterList[1].SetActive(true);
             buttonsList[0].SetActive(false);
             buttonsList[1].SetActive(true);
+            buttonsList[2].SetActive(false);
+            buttonsList[3].SetActive(true);
         }
     }
 
