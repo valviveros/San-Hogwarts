@@ -15,6 +15,7 @@ TagManager:
   - prueba
   - enemy
   - breakable
+  - runas
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - 
   - Enemy
   - Attack
-  - 
+  - Runas
   - 
   - 
   - 

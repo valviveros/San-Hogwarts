@@ -17,6 +17,7 @@ public class CharacterSelector : MonoBehaviour
     public GameObject fadeOutPanel;
     public float fadeWait;
 
+
     // Start is called before the first frame update
     void Start()
     {

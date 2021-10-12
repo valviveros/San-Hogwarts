@@ -25,6 +25,10 @@ public class TopDownMoveScript : MonoBehaviour {
     public VectorValue startingPosition;
     private bool aButtonPressed;
     private bool bButtonPressed;
+    public AudioSource m_MyAudioSource;
+    bool m_Play;
+    bool m_ToggleChange;
+
 
     // Start is called before the first frame update
     void Start() {
@@ -34,7 +38,8 @@ public class TopDownMoveScript : MonoBehaviour {
         transform.position = startingPosition.initialValue;
         aButtonPressed = false;
         bButtonPressed = false;
-	}
+        m_MyAudioSource = GetComponent<AudioSource>();
+    }
 
 	// Update is called once per frame
 	void Update () {
@@ -86,11 +91,15 @@ public class TopDownMoveScript : MonoBehaviour {
 
     public void OnPointerDown() {
         aButtonPressed = true;
+        Debug.Log("1");
+        m_MyAudioSource.Play();
     }
 
     public void OnPointerUp()
     {
         aButtonPressed = false;
+        Debug.Log("2");
+        
     }
 
     public void OnPointerBDown() {
